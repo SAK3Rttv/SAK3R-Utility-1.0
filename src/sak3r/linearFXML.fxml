@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" onMouseEntered="#onKey" onMouseExited="#onKey" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #2e2e2e;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sak3r.linearCont">
+   <children>
+      <HBox alignment="TOP_CENTER" layoutX="-1.0" layoutY="52.0" prefHeight="54.0" prefWidth="585.0" spacing="10.0" AnchorPane.bottomAnchor="348.0" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="16.0" AnchorPane.topAnchor="52.0">
+         <children>
+            <TextField fx:id="txtField" onMouseClicked="#txtFieldAction" prefHeight="33.0" prefWidth="295.0" style="-fx-background-radius: 20px; -fx-background-color: #ffffff;" />
+            <Button minWidth="43.0" mnemonicParsing="false" onAction="#choose" prefHeight="27.0" prefWidth="43.0" style="-fx-background-radius: 100px; -fx-background-color: #49a6d7;" text="Select File" textFill="#030303">
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="92.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="C:\image5\oss.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </HBox>
+      <TextArea fx:id="txtArea" layoutX="11.0" layoutY="104.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="289.0" prefWidth="578.0" style="-fx-border-color: #747474; -fx-border-width: 5;" AnchorPane.bottomAnchor="61.0" AnchorPane.leftAnchor="11.0" AnchorPane.rightAnchor="11.0" AnchorPane.topAnchor="104.0" />
+      <HBox alignment="TOP_CENTER" layoutX="365.0" layoutY="106.0" prefHeight="54.0" prefWidth="224.0">
+         <children>
+            <TextField fx:id="tField" onKeyTyped="#searching" opacity="0.8" style="-fx-background-radius: 25; -fx-background-color: #c2c2c2;" visible="false" />
+            <Button fx:id="up" mnemonicParsing="false" onAction="#upAction" style="-fx-background-radius: 25; -fx-background-color: #c2c2c2;" visible="false">
+               <graphic>
+                  <ImageView fitHeight="16.0" fitWidth="81.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="C:\image5\up.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="close" mnemonicParsing="false" onAction="#closeAction" style="-fx-background-radius: 25; -fx-background-color: #c2c2c2;" visible="false">
+               <graphic>
+                  <ImageView fitHeight="17.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="C:\image5\close.png" />
+                     </image></ImageView>
+               </graphic>
+            </Button>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </HBox>
+      <Button layoutX="10.0" layoutY="10.0" minWidth="43.0" mnemonicParsing="false" onAction="#back" prefHeight="27.0" prefWidth="43.0" style="-fx-background-radius: 100px;" text="Select File" textFill="#030303">
+         <graphic>
+            <ImageView fitHeight="26.0" fitWidth="92.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="C:\image5\home.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Text fill="WHITE" layoutX="188.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Linear Search" wrappingWidth="194.13671875">
+         <font>
+            <Font name="Tahoma Bold" size="27.0" />
+         </font>
+      </Text>
+      <Text fx:id="foundtxt" fill="#49a6d7" layoutX="21.0" layoutY="422.0" stroke="#ff000000" strokeType="OUTSIDE" wrappingWidth="557.0">
+         <font>
+            <Font name="Tahoma" size="16.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

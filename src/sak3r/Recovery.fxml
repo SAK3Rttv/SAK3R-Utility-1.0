@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" style="-fx-background-color: #2e2e2e;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sak3r.RecoveryController">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="132.0" prefWidth="949.0" spacing="10.0" AnchorPane.bottomAnchor="580.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="EASY RECOVERY FILES" wrappingWidth="290.91015625">
+               <font>
+                  <Font name="Arial Bold" size="23.0" />
+               </font>
+            </Text>
+            <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <TextField fx:id="txt" onMouseClicked="#choose" prefHeight="27.0" prefWidth="442.0" style="-fx-background-color: #e1e1e1; -fx-background-radius: 20px;" />
+                  <Button minWidth="43.0" mnemonicParsing="false" onAction="#choose" prefHeight="27.0" prefWidth="43.0" style="-fx-background-radius: 100px; -fx-background-color: #49a6d7;" text="Select File" textFill="#030303">
+                     <graphic>
+                        <ImageView fitHeight="26.0" fitWidth="92.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="C:\image5\oss.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </HBox>
+            <VBox prefHeight="200.0" prefWidth="100.0" />
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </VBox>
+      <ListView fx:id="lista" layoutX="666.0" layoutY="336.0" onMouseClicked="#mks" prefHeight="344.0" prefWidth="299.0" style="-fx-background-radius: 30px; -fx-background-color: #ffffff;" AnchorPane.bottomAnchor="167.0" AnchorPane.rightAnchor="15.0" />
+      <Button layoutX="50.0" layoutY="24.0" mnemonicParsing="false" onAction="#back" style="-fx-background-color: #ffffff; -fx-background-radius: 30px; -fx-text-fill: #000000; -fx-font-weight: bold;" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="24.0">
+         <graphic>
+            <ImageView fitHeight="22.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="C:\image5\home.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <HBox layoutX="-2.0" layoutY="238.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="147.0" prefWidth="636.0" spacing="15.0" AnchorPane.bottomAnchor="328.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="315.0" AnchorPane.topAnchor="238.0">
+         <children>
+            <CheckBox fx:id="png" mnemonicParsing="false" prefHeight="73.0" prefWidth="189.0" style="-fx-background-radius: 25px; -fx-background-color: #FFFFFF;" text="PNG">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="48.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="C:\image5\b.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </CheckBox>
+            <CheckBox fx:id="jpg" mnemonicParsing="false" prefHeight="73.0" prefWidth="189.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 25px;" text="JPG">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="48.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="C:\image5\d.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </CheckBox>
+            <CheckBox fx:id="pdf" mnemonicParsing="false" prefHeight="73.0" prefWidth="189.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 25px;" text="PDF">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="48.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="C:\image5\o.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </CheckBox>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="20.0" />
+         </padding>
+      </HBox>
+      <VBox alignment="CENTER" layoutX="627.0" layoutY="536.0" prefHeight="162.0" prefWidth="315.0" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="7.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <children>
+            <HBox prefHeight="73.0" prefWidth="376.0" spacing="10.0">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <children>
+                  <Button mnemonicParsing="false" onAction="#recover" prefHeight="50.0" prefWidth="169.0" style="-fx-background-radius: 25px; -fx-background-color: #ffffff; -fx-font-size: 20px; -fx-text-fill: #000000; -fx-font-weight: bold;" text="Recover">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="47.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="C:\image5\recover.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#clear" prefHeight="50.0" prefWidth="154.0" style="-fx-background-radius: 25px; -fx-background-color: #ffffff; -fx-font-size: 25px; -fx-text-fill: #000000; -fx-font-weight: bold;" text="Clear">
+                     <font>
+                        <Font name="System Bold" size="54.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="47.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="C:\image5\clear.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </HBox>
+            <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#openFileLocation" prefHeight="45.0" prefWidth="245.0" style="-fx-background-radius: 25px; -fx-background-color: #ffffff; -fx-font-size: 20px; -fx-text-fill: #000000; -fx-font-weight: bold;" text="Open file location">
+               <font>
+                  <Font name="System Bold" size="54.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="47.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="C:\image5\open.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </VBox>
+      <VBox layoutX="14.0" layoutY="438.0" prefHeight="146.0" prefWidth="210.0" spacing="10.0" AnchorPane.bottomAnchor="128.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="725.0" AnchorPane.topAnchor="438.0">
+         <children>
+            <Button fx:id="scan1" mnemonicParsing="false" onAction="#scan" prefHeight="50.0" prefWidth="169.0" style="-fx-background-radius: 25px; -fx-background-color: #ffffff; -fx-font-size: 25px; -fx-text-fill: #000000; -fx-font-weight: bold;" text="Scan">
+               <font>
+                  <Font name="System Bold" size="44.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="47.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="C:\image5\r.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <CheckBox fx:id="selectAll" mnemonicParsing="false" onAction="#selectAllAction" prefHeight="47.0" prefWidth="177.0" style="-fx-background-radius: 25px; -fx-background-color: #FFFFFF;" text="Select All">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="48.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="C:\image5\sd.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </CheckBox>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="100.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sak3r.dones">
+   <children>
+      <Text fx:id="fg" layoutX="57.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Recovered  Files" />
+   </children>
+</AnchorPane>
